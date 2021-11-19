@@ -2,3 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+h2{
+    color: grey;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 70px;
+}
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    width: 300px;
+    margin-top: 40px;
+    text-align: center;
+    color: #40404f;
+    font-weight: 500;
+}
+.name{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.job-role{
+    text-align: center;
+    color: #acacac;
+    font-size: 15px;
+    margin-top: 8px;
+}
