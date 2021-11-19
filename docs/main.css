@@ -32244,6 +32244,21 @@ video {
   content: none;
 }
 
+.container{
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li{
+  display: inline-block;
+}
+
+.name{
+  color: cyan;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -188378,4 +188393,3 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
