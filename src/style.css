@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.shell {
+    @apply px-4;
+
 h2{
     color: grey;
     text-align: center;
@@ -41,4 +45,5 @@ p{
     color: #acacac;
     font-size: 15px;
     margin-top: 8px;
+
 }

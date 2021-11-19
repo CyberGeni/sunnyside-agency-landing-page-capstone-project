@@ -6,44 +6,55 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/docs/main.css">
+  <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .shell {padding: 1rem 3rem;height: 1000px;}
+    .menu a {color: whitesmoke;}
+    .black {color: black !important;}
   </style>
 </head>
 <body>
-  <section class="row">
-    <div class="nav">
-      <img src="/images/logo.svg" alt="">
- 
-      <div>
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="header">
-      <div class="burger-icon">
-        <img src="/images/icon-hamburger.svg" alt="hamburger">
-      </div>
-      <h1 class="header -text">We are creatives</h1>
-      <div class="header-arrow">
-        <img src="/images/icon-arrow-down.svg" alt="icon-arrow">
+  <div class="bg-hero-pattern relative">
+    <img src="../images/desktop/image-header.jpg" alt="" class="z-0 absolute">
+    <div class="shell">
+      <div class="header pt-4 md:pt-1">
+        <nav class="flex justify-between">
+          <div class="relative top-6">          
+            <img src="../images/logo.svg" alt="sunnyside">
+          </div>
+          <div class="flex z-10">
+            <div class="hidden text-center md:inline-block bg-white px-16 py-4 relative top-20 right-16
+            md:bg-transparent md:top-0 md:right-0 md:px-0 md:py-0" id="menu">
+              <ul class="menu">
+                <li class="px-4 md:inline-block py-4"><a class="black md:text-white font-bold" href="#">About</a></li>
+                <li class="px-4 md:inline-block py-4"><a href="#" class="black md:text-white font-bold">Services</a></li>
+                <li class="px-4 md:inline-block py-4"><a href="#" class="black md:text-white font-bold">Projects</a></li>
+                <li class="px-4 py-2 ml-3 md:inline-block hover:bg-blue-200 my-4 bg-yellow-400 md:bg-white rounded-3xl"><a href="#" class="black font-bold">
+                  CONTACT</a>
+                </li>
+              </ul>
+            </div>
+            <div class="burger-icon md:hidden" id="burger">
+              <img src="../images/icon-hamburger.svg" alt="hamburger">
+            </div>
+          </div>        
+        </nav>
+          <div class="relative text-center top-16">
+            <h1 class="text-white font-bold text-5xl leading-tight">WE ARE CREATIVES</h1>
+            <img src="../images/icon-arrow-down.svg" alt="icon-arrow" class="relative top-16 left-2/4 w-6">
+          </div>        
       </div>
     </div>
   </div>
-  </section>
   <!--Section class starts here-->
   <section class="transform-section">
     <div class="transform-img">
-<img class="transform-desktop" src="/images/desktop/image-transform.jpg" alt="desktop image transform">
+<img class="transform-desktop" src="../images/desktop/image-transform.jpg" alt="desktop image transform">
     </div>
     <div class="transform-content">
       <h2>Transform your brand</h2>
@@ -53,7 +64,7 @@
     </div>
   </section>
   <section class="stand-out">
-    <img class="standout-desktop" src="/images/desktop/image-stand-out.jpg" alt="desktop image standout">
+    <img class="standout-desktop" src="../images/desktop/image-stand-out.jpg" alt="desktop image standout">
     <div class="stand-out-details">
       <h2>Stand out to the right audience</h2>
       <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
@@ -63,7 +74,7 @@
   </section>
   <!--Graphics Design  Section-->
   <section class="Graphic-design">
-    <img class="graphic-desktop" src="/images/desktop/image-graphic-design.jpg" alt="desktop graphic image">
+    <img class="graphic-desktop" src="../images/desktop/image-graphic-design.jpg" alt="desktop graphic image">
 <div class="graphic-details">
   <h2>Graphic design</h2>
   <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
@@ -73,7 +84,7 @@
   <!--Photography Section-->
   <section class="photography">
     <div class="photography-image">
-    <img class="photography-desktop" src="/images/desktop/image-photography.jpg" alt="">
+    <img class="photography-desktop" src="../images/desktop/image-photography.jpg" alt="">
     </div>
     <div class="photography-details">
       <h2>Photography</h2>
@@ -86,13 +97,12 @@
   <h2>Client testimonials</h2>
   <div class="container">
     <div>
-      <img src="/images/image-emily.jpg" alt="">
+      <img src="../images/image-emily.jpg" alt="">
       <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
 <h3 class="name">Emily R.</h3>
 <p class="job-role">Marketing Director</p>
     </div>
     <div>
-
       <img src="../images/image-thomas.jpg" alt="">
       <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience</p>
 
@@ -152,5 +162,18 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </footer>
+
+<script>
+  const burger = document.querySelector('#burger');
+  const menu = document.querySelector('#menu');
+
+  burger.addEventListener('click', () => {
+    if (menu.classList.contains('hidden'))  {
+      menu.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+    }
+  });
+</script>
 </body>
 </html>
