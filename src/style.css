@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.shell {
+    @apply px-4;
+}
