@@ -32244,19 +32244,111 @@ video {
   content: none;
 }
 
+.shell {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h2{
+  color: grey;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
 .container{
-  background: hsl(0, 0%, 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 70px;
 }
 
-.li{
-  display: inline-block;
+.testimonial-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p{
+  width: 300px;
+  margin-top: 40px;
+  text-align: center;
+  color: #40404f;
+  font-weight: 500;
 }
 
 .name{
-  color: cyan;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.job-role{
+  text-align: center;
+  color: #acacac;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+footer {
+  background-color: hsla(168, 62%, 56%, 0.5);
+  color: hsl(167, 40%, 24%);
+  padding: 30px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+#nameofcompany {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  width: auto;
+}
+
+.footer-menu {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+}
+
+.footer-menu li {
+  float: left;
+  margin-right: 30px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+
+.footer-menu a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.social-media {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.social-media li {
+  float: left;
+  margin-right: 30px;
+}
+
+.social-media img:hover{
+  filter:
+    invert(100%)
+    sepia(1) 
+    saturate(20%)
+    hue-rotate(360deg)
+    brightness(300%);
 }
 
 @media (min-width: 640px) {

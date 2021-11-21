@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.shell {
+    @apply px-4;
+}
 h2{
     color: grey;
     text-align: center;
@@ -16,6 +20,7 @@ h2{
     padding-left: 8%;
     padding-right: 8%;
     margin-top: 70px;
+    
 }
 @media (max-width: 800px) {
     .container{
@@ -47,4 +52,62 @@ p{
     color: #acacac;
     font-size: 15px;
     margin-top: 8px;
+}
+
+footer {
+    background-color: hsla(168, 62%, 56%, 0.5);
+    color: hsl(167, 40%, 24%);
+    padding: 30px;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+}
+
+.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50%;
+} 
+
+.footer-menu {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+.footer-menu li {
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+}
+
+.footer-menu a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.social-media {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.social-media li {
+    float: left;
+    margin-right: 30px;
+}
+
+.social-media img:hover{
+    filter:
+    invert(100%)
+    sepia(1) 
+    saturate(20%)
+    hue-rotate(360deg)
+    brightness(300%);
 }
