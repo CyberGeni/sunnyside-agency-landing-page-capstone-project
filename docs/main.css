@@ -32256,27 +32256,34 @@ h2{
   font-size: 18px;
 }
 
-.container{
+.testimonial {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-left: 8%;
   padding-right: 8%;
   margin-top: 70px;
 }
 
-.testimonial-img{
+@media (max-width: 800px) {
+  .testimonial {
+    flex-direction: column;
+  }
+}
+
+.testimonial-img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto
 }
 
-p{
-  width: 300px;
-  margin-top: 40px;
+.testimonial p {
+  width: 80%;
+  margin: 36px auto;
   text-align: center;
   color: #40404f;
   font-weight: 500;
@@ -32285,14 +32292,14 @@ p{
 .name{
   text-align: center;
   font-size: 16px;
-  margin-top: 50px;
+  margin-top: 12px;
 }
 
 .job-role{
   text-align: center;
   color: #acacac;
   font-size: 15px;
-  margin-top: 8px;
+  margin: 12px auto;
 }
 
 footer {
@@ -32300,14 +32307,14 @@ footer {
   color: hsl(167, 40%, 24%);
   padding: 30px;
   text-align: center;
-  font-family: "Barlow", sans-serif;
 }
 
-#nameofcompany {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 20px;
-  width: auto;
+.footer-logo img {
+  display: flex;
+  margin: 0 auto;
+  margin-left: 200px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .footer-menu {
@@ -32317,24 +32324,16 @@ footer {
   width: auto;
 }
 
-.footer-menu li {
-  float: left;
-  margin-right: 30px;
-}
-
 .footer-menu a {
   text-decoration: none;
   color: hsl(167, 40%, 24%);
 }
 
-.footer-menu a:hover {
-  color: hsl(0, 0%, 100%);
-}
-
 .social-media {
   list-style-type: none;
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .social-media li {
