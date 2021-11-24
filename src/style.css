@@ -1,105 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-.shell {
-    @apply px-4;
+.heading {
+    @apply text-4xl font-black font-serf text-verydarkdesaturatedblue;
 }
-h2{
-    color: grey;
-    text-align: center;
-    margin-top: 80px;
-    font-size: 18px;
+
+.card {
+    @apply text-center px-3 py-12 bg-White;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 8%;
-    padding-right: 8%;
-    margin-top: 70px;
+
+.text {
+    @apply my-8 leading-8 text-verydarkgrayishblue;
+}
+
+.link {
+    @apply inline-block font-serf font-black text-xl uppercase text-verydarkdesaturatedblue;
+}
+
+.name {
+    @apply font-serf font-black text-2xl my-3 text-verydarkdesaturatedblue;
+}
+.menu-items {
+    position: absolute;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    width: 87%;
+}
+
+.menu-items:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -1.2rem;
+    border-top: 0.6rem solid transparent;
+    border-bottom: 0.6rem solid hsl(0, 0%, 100%);
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid hsl(0, 0%, 100%);
+}
+
+.read::after {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 0.7rem;
+    margin-top: -13px;
+    margin-left: -6%;
+    border-radius: 0.5rem;
+}
+.yellow::after {
+    background: hsla(51, 100%, 49%, 0.404);
     
 }
-.testimonial-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-p{
-    width: 300px;
-    margin-top: 40px;
-    text-align: center;
-    color: #40404f;
-    font-weight: 500;
-}
-.name{
-    text-align: center;
-    font-size: 16px;
-    margin-top: 50px;
-}
-.job-role{
-    text-align: center;
-    color: #acacac;
-    font-size: 15px;
-    margin-top: 8px;
+.yellow:hover::after {
+    background: hsl(51, 100%, 49%);
+
 }
 
-footer {
-    background-color: hsla(168, 62%, 56%, 0.5);
-    color: hsl(167, 40%, 24%);
-    padding: 30px;
-    text-align: center;
-    font-family: "Barlow", sans-serif;
+.red::after {
+    background: hsla(7, 99%, 70%, 0.493);
 }
 
-#nameofcompany {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px;
-    width: auto;
+.red:hover::after {
+    background: hsl(7, 99%, 70%);
 }
 
-.footer-menu {
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    width: auto;
+
+.socials > ul > li > a img{
+    transition: .25s;
 }
 
-.footer-menu li {
-    float: left;
-    margin-right: 30px;
-}
-
-.footer-menu a {
-    text-decoration: none;
-    color: hsl(167, 40%, 24%);
-}
-
-.footer-menu a:hover {
-    color: hsl(0, 0%, 100%);
-}
-
-.social-media {
-    list-style-type: none;
-    display: inline-block;
-    margin-top: 50px;
-}
-
-.social-media li {
-    float: left;
-    margin-right: 30px;
-}
-
-.social-media img:hover{
-    filter:
-    invert(100%)
-    sepia(1) 
-    saturate(20%)
-    hue-rotate(360deg)
-    brightness(300%);
+.socials > ul > li > a:hover img{
+    filter: brightness(0) invert(1);
 }
