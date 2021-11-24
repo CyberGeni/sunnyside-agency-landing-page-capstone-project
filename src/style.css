@@ -1,12 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+}
+body{
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 700;
 
-
+}
 .shell {
     @apply px-4;
 }
 h2{
+    font-family: 'Fraunces', serif;
     color: grey;
     text-align: center;
     margin-top: 80px;
